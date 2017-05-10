@@ -235,4 +235,4 @@ function vb_column(svgSelector,config,csvDat) {
           labels.remove();
         };
 };
-module.exports = vb_column; // to make it exportable
+if (window === undefined) module.exports = vb_column; // to make it exportable
